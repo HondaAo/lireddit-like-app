@@ -14,6 +14,7 @@ import cors from 'cors'
 import { createConnection } from 'typeorm'
 import { Post } from "./entities/Post";
 import { User } from "./entities/User";
+import { Updoot } from "./entities/Updoot";
 
 const main = async() => {
     await createConnection({
@@ -23,7 +24,7 @@ const main = async() => {
         password: 'aosora1207',
         logging: true,
         synchronize: true,
-        entities: [User, Post]
+        entities: [User, Post, Updoot]
     })
     const app = express();
     app.use(

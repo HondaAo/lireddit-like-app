@@ -1,4 +1,4 @@
-import {  Response} from 'express'
+import { Response} from 'express'
 import {Redis} from 'ioredis'
 
 export type MyContext = {
